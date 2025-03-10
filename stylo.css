@@ -22,3 +22,45 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.buttons{
+    margin: 30px 0;
+    display: flex;
+    gap: 20px;
+}
+button{
+    padding: 20px;
+    font-size: 50px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: opacity 0.5 ease-in-out;
+   
+}
+
+button:hover{
+    opacity: 0.7;
+}
+#stone{
+    background-color: rgb(14, 238, 59);
+}
+#paper {
+    background-color: rgb(130, 4, 98);
+}
+#scissors {
+    background-color: rgb(205, 16, 16);
+}
+
+p{
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.your-score span {
+    color: rgb(5, 236, 13);
+}
+
+.machine-score span {
+    color: rgb(229, 6, 166);
+}
