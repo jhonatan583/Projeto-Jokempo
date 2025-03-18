@@ -4,25 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto JokemPô</title>
-    <link rel="stylesheet" href="stylo.css">
+    <title>JokemPô</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
     <div class="container">
-
         <h1>JokemPô</h1>
+
         <div class="buttons">
-        <Button id="stone" onclick="playhuman('stone')">&#128074;</Button>
-            <button id="paper" onclick="playhuman('paper')">&#x1F590;</button>
+            <button id="stone" onclick="playhuman('stone')">&#x1F44A;</button>
+            <button id="paper" onclick="playhuman('paper')">&#x270B;</button>
             <button id="scissors" onclick="playhuman('scissors')">&#x270C;</button>
+            <button id="Reset" onclick="addEventListener('Resete')">&#x2705;</button>
         </div>
+
         <p class="result"></p>
-        <p class="your-score"> Sua Pontuação : <span id="human-score">0</span> </p>
-        <p class="machine-score">Pontuação da Alexa: <span id="machine-score">0</span></p>
+        <p class="score-player">Sua pontuação: <span id="player-score">0</span></p>
+        <p class="score-machine">Pontuação da Maquina: <span id="machine-score">0</span> </p>
     </div>
-    <script src="script.js"></script>
 </body>
+<script src="javascript.js"></script>
 
 </html>
