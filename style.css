@@ -33,12 +33,11 @@ body {
 }
 
 button {
-    padding: 20px;
+    padding: 30px;
     font-size: 50px;
     border-radius: 10px;
     border: none;
     cursor: pointer;
-
     transition: all 0.5s ease-in-out;
 }
 
@@ -56,7 +55,7 @@ button:hover {
 }
 
 #scissors {
-    background-color: rgb(6, 237, 45);
+    background-color: rgb(237, 6, 221);
 }
 
 p {
@@ -71,4 +70,14 @@ p {
 
 .score-machine span {
     color: aqua;
+}
+
+#reset{
+    color: rgb(50, 250, 5);
+    display: flex;
+    margin: 30px ;
+    font-size: 20px;
+background-color: black;
+display: inline-block;
+font-weight: 1000;
 }
