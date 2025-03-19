@@ -1,14 +1,16 @@
 const result = document.querySelector('.result')
 const ScorePlayer = document.querySelector('#player-score')
 const ScoreMachine = document.querySelector('#machine-score')
+const ResetButton = document.querySelector('#reset')
+
 
 let ScorePlayerNumber = 0
 let ScoreMachineNumber = 0
 
-const GAME_OPTIONS={
-    STONE:'stone',
-    PAPER:'paper',
-    SCISSORS:'scissors'
+const GAME_OPTIONS = {
+    STONE: 'stone',
+    PAPER: 'paper',
+    SCISSORS: 'scissors'
 }
 const playhuman = (humanchoice) => {
 
@@ -48,4 +50,16 @@ const playTheGame = (human, machine) => {
         ScoreMachine.innerHTML = ScoreMachineNumber
         result.innerHTML = "Você Perdeu"
     }
+
+    const ResetGame = () => {
+
+        ScorePlayerNumber = 0;
+        ScoreMachineNumber = 0;
+
+        ScorePlayer.innerHTML = ScorePlayerNumber
+        ScoreMachine.innerHTML = ScoreMachineNumber
+        result.innerHTML = "Jogo Reiniciado!";
+    };
+    ResetButton.addEventListener('click', ResetGame)
+
 }
